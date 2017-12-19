@@ -10,15 +10,15 @@ restService.use(
     extended: true
   })
 );
-//this intial comment
+
 restService.use(bodyParser.json());
 
 restService.post("/echo", function(req, res) {
   var speech =
     req.body.result &&
     req.body.result.parameters &&
-    req.body.result.parameters.classes
-      ? req.body.result.parameters.classes
+    req.body.result.parameters.echoText
+      ? req.body.result.parameters.echoText
       : "Seems like some problem. Speak again.";
   return res.json({
     speech: speech,
@@ -197,4 +197,4 @@ restService.post("/slack-test", function(req, res) {
 
 restService.listen(process.env.PORT || 8000, function() {
   console.log("Server up and listening");
-});
+})
