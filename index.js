@@ -17,8 +17,8 @@ restService.post("/echo", function(req, res) {
   var speech =
     req.body.result &&
     req.body.result.parameters &&
-    req.body.result.parameters.time
-      ? req.body.result.parameters.time
+    req.body.result.parameters.classes
+      ? req.body.result.parameters.classes
       : "Seems like some problem. Speak again.";
   return res.json({
     speech: speech,
@@ -197,15 +197,4 @@ restService.post("/slack-test", function(req, res) {
 
 restService.listen(process.env.PORT || 8000, function() {
   console.log("Server up and listening");
-})ech: "speech",
-    displayText: "speech",
-    source: "webhook-echo-sample",
-    data: {
-      slack: slack_message
-    }
-  });
 });
-
-restService.listen(process.env.PORT || 8000, function() {
-  console.log("Server up and listening");
-})
