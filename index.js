@@ -26,7 +26,7 @@ restService.post("/echo", function(req, res) {
     req.body.result.parameters.time
       ? req.body.result.parameters.time
       : "Seems like some problem. Speak again.";
-  speech = '${speech_1}+${speech_2}';
+  speech = speech_1+speech_2;
   return res.json({
     speech: speech,
     displayText: speech,
