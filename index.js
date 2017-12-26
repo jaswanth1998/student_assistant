@@ -14,19 +14,12 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/echo", function(req, res) {
-  var speech_1 =
+  var speech =
     req.body.result &&
     req.body.result.parameters &&
     req.body.result.parameters.time
       ? req.body.result.parameters.time
       : "Seems like some problem. Speak again.";
-      var speech_2 =
-    req.body.result &&
-    req.body.result.parameters &&
-    req.body.result.parameters.time
-      ? req.body.result.parameters.time
-      : "Seems like some problem. Speak again.";
-  speech = speech_1+speech_2;
   return res.json({
     speech: speech,
     displayText: speech,
@@ -194,6 +187,17 @@ restService.post("/slack-test", function(req, res) {
   };
   return res.json({
     speech: "speech",
+    displayText: "speech",
+    source: "webhook-echo-sample",
+    data: {
+      slack: slack_message
+    }
+  });
+});
+
+restService.listen(process.env.PORT || 8000, function() {
+  console.log("Server up and listening");
+})ech: "speech",
     displayText: "speech",
     source: "webhook-echo-sample",
     data: {
