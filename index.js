@@ -5,24 +5,8 @@ const bodyParser = require("body-parser");
 
 const restService = express();
 var date = new Date();
-var weekday = new Array(7);
-weekday[-1]="Saturday";
 
-weekday[0] =  "Sunday";
-
-weekday[1] = "Monday";
-
-weekday[2] = "Tuesday";
-
-weekday[3] = "Wednesday";
-
-weekday[4] = "Thursday";
-
-weekday[5] = "Friday";
-
-weekday[6] = "Saturday";
-
-var day =(date.getDay())
+var day =(date.getDay());
 
 
 restService.use(
@@ -91,8 +75,8 @@ if (time == "today"){
 
 }
 return res.json({
-    speech: "i am fine ",
-    displayText: "i am fine 2",
+    speech: speech,
+    displayText: speech,
     source: "webhook-echo-sample"
   });
 });
