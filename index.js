@@ -20,9 +20,10 @@ restService.post("/echo", function(req, res) {
     req.body.result.parameters.classes
       ? req.body.result.parameters.classes
       : "Seems like some problem. Speak again.";
+    speech = "the class are "+speech
   return res.json({
-    speech: "the class are "+speech,
-    displayText: "the classes is "speech,
+    speech: speech,
+    displayText: speech,
     source: "webhook-echo-sample"
   });
 });
