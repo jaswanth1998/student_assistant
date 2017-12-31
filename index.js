@@ -20,7 +20,13 @@ restService.post("/echo", function(req, res) {
     req.body.result.parameters.classes
       ? req.body.result.parameters.classes
       : "Seems like some problem. Speak again.";
-    speech = "the class are "+speech
+      var time =
+    req.body.result &&
+    req.body.result.parameters &&
+    req.body.result.parameters.time
+      ? req.body.result.parameters.time
+      : "Seems like some problem. Speak again.";
+    speech = "the class are "+speech+"the time "+time
   return res.json({
     speech: speech,
     displayText: speech,
