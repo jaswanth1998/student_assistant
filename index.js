@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const restService = express();
 var date = new Date();
 
-var day =(date.getDay());
+
 
 
 restService.use(
@@ -32,14 +32,15 @@ restService.post("/echo", function(req, res) {
       : "Seems like some problem. Speak again.";
 
 
+var day =(date.getDay());
 
 
 if (time == "today"){
   day =day;
 }else if (time = "tomarrow"){
   day = day + 1;
-  }else if(time = " yestraday"){
-    day = day-1;
+  }else if(time = "yestraday"){
+  day = day-1;
 
   }else if(time = "next"){
 
