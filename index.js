@@ -26,7 +26,11 @@ restService.post("/echo", function(req, res) {
     req.body.result.parameters.time
       ? req.body.result.parameters.time
       : "Seems like some problem. Speak again.";
-    speech = "the class are "+speech+"the time "+time
+      if (time == "today"){
+    speech = "the class are "+speech+"the today time is  "+time
+  }else{
+    speech = "the class are "+speech+"the time  tomarrow time is "+time
+  }
   return res.json({
     speech: speech,
     displayText: speech,
