@@ -90,9 +90,9 @@ if (time == "today"){
     break;
 
 }
-  return res.json({
-    speech: speech,
-    displayText: speech,
+return res.json({
+    speech: "i am fine ",
+    displayText: "i am fine 2",
     source: "webhook-echo-sample"
   });
 });
