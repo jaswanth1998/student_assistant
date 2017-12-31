@@ -22,7 +22,7 @@ weekday[5] = "Friday";
 
 weekday[6] = "Saturday";
 
-day =(date.getDay())
+var day =(date.getDay())
 
 
 restService.use(

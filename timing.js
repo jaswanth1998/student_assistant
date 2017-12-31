@@ -20,7 +20,7 @@ var n = weekday[day];
 
 switch (day){
 	case -1:
-		speech = "saturday classes are 1.SE,2.WT LAB,3.WT LAB,4.WT LAB, 5.WT ,6.DWDM,7.CN ,8.DAA"
+		speech = "Saturday classes are 1.SE,2.WT LAB,3.WT LAB,4.WT LAB, 5.WT ,6.DWDM,7.CN ,8.DAA"
 		break
 	case 0:
 		speech = "Enjoy sunday didnot any periods  in the time table "
