@@ -65,28 +65,28 @@ if (time == "today"){
 
   switch (day){
   case -1:
-    speech = "Saturday classes are 1.SE,2.WT LAB,3.WT LAB,4.WT LAB, 5.WT ,6.DWDM,7.CN ,8.DAA"
-    break
+    speech = "Saturday classes are 1.SE,2.WT LAB,3.WT LAB,4.WT LAB, 5.WT ,6.DWDM,7.CN ,8.DAA";
+    break;
   case 0:
-    speech = "Enjoy sunday didnot any periods  in the time table "
+    speech = "Enjoy sunday didnot any periods  in the time table ";
     break;
   case 1:
-    speech = "Monday class are 1.DAA,2.APTITUE(V KALAPANA),3.C ENGLISH(ASWINI), 4.CN,5.DWDM ,6.WT, 7.SE ,8.CN"
+    speech = "Monday class are 1.DAA,2.APTITUE(V KALAPANA),3.C ENGLISH(ASWINI), 4.CN,5.DWDM ,6.WT, 7.SE ,8.CN";
     break;
   case 2:
-    speech = "Tuesday classes are 1.SE,2.DWDM,3.CN,4.DAA,WT ,SOFT SKILLS(RAJ KUMAR), SOFT SKILLS(RAJ KUMAR) ,SOFT SKILLS(RAJ KUMAR)"
+    speech = "Tuesday classes are 1.SE,2.DWDM,3.CN,4.DAA,WT ,SOFT SKILLS(RAJ KUMAR), SOFT SKILLS(RAJ KUMAR) ,SOFT SKILLS(RAJ KUMAR)";
     break;
   case 3:
-    speech = "Wednesday classes are 1.DWDM,2.CN,3.SE,4.WT,5.DAA ,6.SE LAB,7.SE LAB ,SE LAB"
+    speech = "Wednesday classes are 1.DWDM,2.CN,3.SE,4.WT,5.DAA ,6.SE LAB,7.SE LAB ,SE LAB";
     break;
   case 4:
-    speech = "Thursday classes are CN,REASONING(ESWAR),WT,SE, DWDM ,COUNSELLING, SE,DAA"
+    speech = "Thursday classes are CN,REASONING(ESWAR),WT,SE, DWDM ,COUNSELLING, SE,DAA";
     break;
   case 5:
-    speech = "Firday classes are 1.DAA,2.CN LAB,3.CN LAB,4.CN LAB,5.WT,6.DWDM,7.APTITUE(V KALAPANA),8.SPORTS/LAB "
+    speech = "Firday classes are 1.DAA,2.CN LAB,3.CN LAB,4.CN LAB,5.WT,6.DWDM,7.APTITUE(V KALAPANA),8.SPORTS/LAB ";
     break;
   case 6:
-    speech = "Saturday classes are 1.SE,2.WT LAB,3.WT LAB,4.WT LAB, 5.WT ,6.DWDM,7.CN ,8.DAA"
+    speech = "Saturday classes are 1.SE,2.WT LAB,3.WT LAB,4.WT LAB, 5.WT ,6.DWDM,7.CN ,8.DAA";
     break;
 
 }
