@@ -57,7 +57,7 @@ switch(time){
   case "tommarrow":
     day = day+1;
     break;
-  case = "yestraday":
+  case  "yestraday":
     day = day-1;
     break;
  }
