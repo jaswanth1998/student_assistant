@@ -50,18 +50,30 @@ restService.post("/echo", function(req, res) {
 
 var day =(date.getDay())
 
-if (time == "today"){
-  day =day;
-}else if (time = "tomarrow"){
-  day = day + 1;
-  }else if(time = " yestraday"){
+switch(time){
+  case "today":
+    day = day;
+    break;
+  case "tommarrow":
+    day = day+1;
+    break;
+  case = "yestraday":
     day = day-1;
+    break;
+ }
 
-  }else if(time = "next"){
+// if (time == "today"){
+//   day =day;
+// }else if (time = "tomarrow"){
+//   day = day + 1;
+//   }else if(time = " yestraday"){
+//     day = day-1;
 
-  }else if (time = "previous"){
+//   }else if(time = "next"){
 
-  }
+//   }else if (time = "previous"){
+
+//   }
 
   switch (day){
   case -1:
@@ -91,8 +103,8 @@ if (time == "today"){
 
 }
 return res.json({
-    speech: "i am fine ",
-    displayText: "i am fine 2",
+    speech: speech,
+    displayText: speech,
     source: "webhook-echo-sample"
   });
 });
