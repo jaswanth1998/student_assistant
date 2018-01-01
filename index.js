@@ -34,19 +34,30 @@ restService.post("/echo", function(req, res) {
 
 var day =(date.getDay());
 
+switch(time){
+  case "today":
+    day = day;
+    break;
+  case "tommarrow":
+    day = day+1;
+    break;
+  case = "yestraday":
+    day = day-1;
+    break;
+}
 
-if (time == "today"){
-  day =day;
-}else if (time = "tomarrow"){
-  day = day + 1;
-  }else if(time = "yestraday"){
-  day = day-1;
+// if (time == "today"){
+//   day =day;
+// }else if (time = "tomarrow"){
+//   day = day + 1;
+//   }else if(time = "yestraday"){
+//   day = day-1;
 
-  }else if(time = "next"){
+//   }else if(time = "next"){
 
-  }else if (time = "previous"){
+//   }else if (time = "previous"){
 
-  }
+//   }
 
   switch (day){
   case -1:
