@@ -48,7 +48,7 @@ restService.post("/echo", function(req, res) {
       : "Seems like some problem. Speak again.";
 
 
-
+var day =(date.getDay())
 
 if (time == "today"){
   day =day;
